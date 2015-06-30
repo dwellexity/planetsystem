@@ -45,3 +45,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.mod
+*.exe
+*.dat
