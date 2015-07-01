@@ -1,8 +1,8 @@
 from visual import *
 scene.fullscreen=True
-axisx = arrow(pos=(0,0,0), axis=(10,0,0), shaftwidth=0.1, color=color.red)
-axisy = arrow(pos=(0,0,0), axis=(0,10,0), shaftwidth=0.1, color=color.green)
-axisz = arrow(pos=(0,0,0), axis=(0,0,10), shaftwidth=0.1, color=color.blue)
+# axisx = arrow(pos=(0,0,0), axis=(2,0,0), shaftwidth=0.001, color=color.red)
+# axisy = arrow(pos=(0,0,0), axis=(0,2,0), shaftwidth=0.001, color=color.green)
+# axisz = arrow(pos=(0,0,0), axis=(0,0,2), shaftwidth=0.001, color=color.blue)
 # label(pos=(10,1,0),text="x-axis")
 # label(pos=(0,11,1),text="y-axis")
 # label(pos=(1,0,11),text="z-axis")
@@ -27,7 +27,7 @@ for i in range(0,n):
 	z = float(row[2])
 	s.append(sphere(pos=[x,y,z],radius=r[i],color=color.cyan,make_trail=True))
 for i in range(1,loop):
-	rate(100)
+	rate(10000)
 	for j in range(0,n):
 		line=f.readline()
 		row = line.split()
